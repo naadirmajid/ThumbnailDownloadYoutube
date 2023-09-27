@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Thumbnail Downloader</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Adding Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+       <!-- [ ... Other meta tags and stylesheet links ... ] -->
+
+    <!-- AdSense Script (usually found in the head of your AdSense code snippet) -->
+    <script data-ad-client="YOUR_ADSENSE_CLIENT_ID" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title text-center">YouTube Thumbnail Downloader</h4>
+                </div>
+                <div class="card-body">
+                    <form action="/" method="post">
+                        <div class="form-group">
+                            <label for="video_url">Enter YouTube Video URL:</label>
+                            <input type="url" class="form-control" id="video_url" name="video_url" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Fetch Thumbnails</button>
+                    </form>
+
+                    <!-- Displaying the fetched thumbnails -->
+                    {% for resolution, url in thumbnails.items() %}
+                        <hr>
+                        <h5 class="text-center">{{ resolution.replace("_", " ").title() }}</h5>
+                        <img src="{{ url }}" class="img-fluid" alt="{{ resolution }} thumbnail">
+                        <div class="mt-2 text-center">
+                            <!-- Download Button -->
+                            <a href="{{ url }}" download class="btn btn-success">Download</a>
+                            
+                            <!-- Social Media Share Buttons with Icons -->
+                            <a href="https://www.facebook.com/sharer/sharer.php?u={{ url }}" target="_blank" class="btn btn-primary">
+                                <i class="fab fa-facebook-f"></i> Share on Facebook
+                            </a>
+                            <a href="https://twitter.com/share?url={{ url }}" target="_blank" class="btn btn-info">
+                                <i class="fab fa-twitter"></i> Share on Twitter
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+<!-- [ ... Previous code remains unchanged ... ] -->
+
+<div class="container mt-5">
+    <!-- [ ... The thumbnail fetcher form and results remain unchanged ... ] -->
+
+    <!-- New Information Section Below -->
+    <hr class="mt-5">
+
+    <h2 class="text-center">YouTube Thumbnail Downloader</h2>
+    <h2 class="text-center" >▷ Save YT Video Thumbnails</h2>
+    <p>Get free thumbnail image of any youtube videos in Full HD(1080), HD (720), SD, and also in small size. it's currently supported formats: YouTube (HD, HQ, 1080p, 4K) videos</p>
+
+    <h4>What is the use of this YouTube Thumbnail Grabber website?</h4>
+    <p>People use this YouTube thumbnail downloader website for getting thumbnail from any youtube videos. That can be used in presentation, animation work or many other activities.</p>
+
+    <h4>How to use this YouTube thumbnail downloader website?</h4>
+    <p>I have shared some of screenshot in which i have guided you how you can use this YouTube downloader website. It's quite easy first step is you just copy any YouTube link whom thumbnail you want. youtube cover download Easily you can download you tube cover</p>
+    <p>Now paste that url in input box, the moment you paste that link it's automatically going to generate different size of thumbnails for you. Now click on thumbnail download button and it's going to automatically downloaded in your system. If you are using Android phone then you have to saved that images and if you are using iphone then i don't know how you can do it?</p>
+
+    <h4>Is it legal to download YouTube thumbnails?</h4>
+    <p>Of course it's 100% legal you can download any YouTube videos thumbnails but as you know thumbnail and video are copyrighted product you should take author permissions 1st in order to reuse that.</p>
+
+    <h4>Compatibility of this YT thumbnail grabber website</h4>
+    <p>This YouTube thumbnail downloader website is going to work well in all devices except iPhone, because iPhone doesn't allow images to be saved in iPhone. But if you using jailbroken iphone then there is no any problem. on the other hand is going to work fine in almost all kinds Android devices and laptop or desktop system.</p>
+
+    <h4>Is there any Copyright risk on YouTube Thumbnails?</h4>
+    <p>Whatever youtube screenshot you are downloading a copyright of respective on owner of that videos. If you want to use it in your work then you should ask for permission.</p>
+    <p>Especially if you are reusing on YouTube then it's can create problem but if your plan is outside of YouTube. like use on website for creating logos or any Photoshop types of stuff then there is no any problem. You hardly receive any dmca complaint about related to that particular Youtube thumnail.</p>
+
+    <h4>Is reusing YouTube thumbnails are SEO friendly?</h4>
+    <p>Nope it's not, in short answer it's not seo friendly because almost all thumbnails which are on YouTube are indexed by Google. So which one is unique and which one is duplicate google know it. So it's not SEO friendly as you know. But you can do some stuff on that thumbnail I mean getting some unique effects using photoshop or any other software that can make your thumbnail unique again so that can be reused and make that seo friendly again.</p>
+
+    <p class="font-weight-bold">youtube video thumbnail download</p>
+    <p>YouTubeThumbnailDownloader.com - Copyright 2023</p>
+</div>
+
+<!-- [ ... Scripts remain unchanged ... ] -->
+
+</body>
+</html>
