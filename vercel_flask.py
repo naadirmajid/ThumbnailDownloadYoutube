@@ -1,12 +1,4 @@
-# Import necessary modules
-from flask import Flask, render_template, request
-from app import app as flask_app
+from youtube_thumbnail_webapp import app as flask_app  # Replace 'your_flask_app_file' with your actual Flask app file's name
 
-from youtube_thumbnail_webapp import app as flask_app  # Assuming your Flask app is named 'app' and it's in 'your_flask_app_file.py'
-
-# Create the WSGI application object
-app = flask_app
-
-# If the file is executed, run the Flask development server
-if __name__ == "__main__":
-    app.run()
+def app(environ, start_response):
+    return flask_app(environ, start_response)
